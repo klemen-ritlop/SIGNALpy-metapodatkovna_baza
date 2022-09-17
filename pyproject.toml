@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "signalpy-metapodatkovna-baza"
+version = "0.1.0"
+description = ""
+authors = ["Klemen Ritlop <112621433+klemen-ritlop@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "signalpy_metapodatkovna_baza", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psycopg2 = "^2.9.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+flake8 = "^5.0.4"
+mypy = "^0.971"
+isort = "^5.10.1"
+pre-commit = "^2.20.0"
+types-psycopg2 = "^2.9.21"
+pylint = "^2.15.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
